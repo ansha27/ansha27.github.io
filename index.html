@@ -402,6 +402,31 @@
     </div>
     <!-- /.modal -->
 
+    <div id="modal9-close" class="modal fade">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body ">
+            <h3 class="text-center bold mt-5 mb-5 p-2">Ihh kok gitu sih, tuhkan ketauan mbepnya nakal &#128557;&#128557;&#128557;, coba sekali lagi mamas nanya ya &#128557; &#128557;</h3>
+          </div>
+          <a> </a>
+          <div class="modal-footer">
+            <button
+              type="button"
+              id="btn9-open"
+              class="btn btn-primary center-block mx-auto d-block"
+            >
+              OK
+            </button>
+          </div>
+          <div><span> . </span></div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog modal-dialog-centered -->
+    </div>
+    <!-- /.modal -->
+    
+
     <div id="modal10" class="modal fade">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -602,6 +627,24 @@
       $("#btn9").click(function () {
           $("#modal9").modal("hide");
           $("#modal10").modal("show");
+      });
+  });
+</script>
+
+<script type="text/javascript">
+  $(function () {
+      $("#btn9-close").click(function () {
+          $("#modal9").modal("hide");
+          $("#modal9-close").modal("show");
+      });
+  });
+</script>
+
+<script type="text/javascript">
+  $(function () {
+      $("#btn9-open").click(function () {
+          $("#modal9-close").modal("hide");
+          $("#modal9").modal("show");
       });
   });
 </script>
